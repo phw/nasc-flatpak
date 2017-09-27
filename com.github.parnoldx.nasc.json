@@ -8,6 +8,8 @@
     "--share=ipc",
     "--socket=x11",
     "--socket=wayland",
+    "--talk-name=org.gtk.vfs",
+    "--talk-name=org.gtk.vfs.*",
     "--filesystem=xdg-desktop",
     "--filesystem=xdg-documents",
     "--filesystem=xdg-public-share",
@@ -125,6 +127,10 @@
         {
           "type": "patch",
           "path": "fix-qcalculate-template-path.patch"
+        },
+        {
+          "type": "patch",
+          "path": "create-exchange-rate-folder.patch"
         },
         {
           "type": "shell",
