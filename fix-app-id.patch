@@ -127,13 +127,6 @@ index 3190b27..dca1de4 100755
  
              main_url = "https://github.com/parnold-x/nasc/tree/master";
              bug_url = "https://github.com/parnold-x/nasc/issues";
-@@ -68,4 +68,4 @@ namespace Nasc {
-             app.run (args);
-         }
-     }
--}
-\ No newline at end of file
-+}
 diff --git a/src/NascSettings.vala b/src/NascSettings.vala
 index c9a055a..8192519 100755
 --- a/src/NascSettings.vala
@@ -147,10 +140,3 @@ index c9a055a..8192519 100755
      }
  
      public static NascSettings get_instance () {
-@@ -48,4 +48,4 @@ public class NascSettings : Granite.Services.Settings {
- 
-         return instance;
-     }
--}
-\ No newline at end of file
-+}

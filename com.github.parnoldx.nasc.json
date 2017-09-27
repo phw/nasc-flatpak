@@ -126,7 +126,7 @@
         },
         {
           "type": "patch",
-          "path": "fix-qcalculate-template-path.patch"
+          "path": "fix-hardcoded-paths.patch"
         },
         {
           "type": "patch",
