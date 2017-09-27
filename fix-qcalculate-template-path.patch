@@ -1,0 +1,13 @@
+diff --git a/src/NascSettings.vala b/src/NascSettings.vala
+index c9a055a..53f7c2b 100755
+--- a/src/NascSettings.vala
++++ b/src/NascSettings.vala
+@@ -25,7 +25,7 @@ public class NascSettings : Granite.Services.Settings {
+     public const string sheet_split_char = "|§§|";
+     public const string name_split_char = "-§-";
+     public const string sheet_path = "/.local/share/nasc/";
+-    public const string template_path = "/usr/share/qalculate/nasc_template.sheets";
++    public const string template_path = "/app/share/qalculate/nasc_template.sheets";
+
+     public bool show_tutorial { get; set; }
+     public bool advanced_mode { get; set; }
