@@ -14,6 +14,7 @@
     "--filesystem=xdg-documents",
     "--filesystem=xdg-public-share",
     "--filesystem=xdg-run/dconf",
+    "--filesystem=~/.local/share/nasc/",
     "--filesystem=~/.config/dconf:ro",
     "--talk-name=ca.desrt.dconf",
     "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
