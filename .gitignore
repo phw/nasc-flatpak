@@ -1,3 +1,4 @@
 .flatpak-builder/
 com.github.parnoldx.nasc/
-flatpak-repo/
+repo/
+*.flatpak

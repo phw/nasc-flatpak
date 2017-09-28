@@ -1,0 +1,15 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 30d769c..af9c15b 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -24,7 +24,9 @@ include_directories(${QALCULATE_INCLUDE_PATH})
+ add_definitions(-w)
+ 
+ set (DATADIR "/usr/share/nasc")
+-set (STYLEDIR "/usr/share/qalculate/styles/")
++if (!STYLEDIR)
++  set (STYLEDIR "/usr/share/qalculate/styles/")
++endif ()
+ set (PKGDATADIR "${DATADIR}")
+ set (GETTEXT_PACKAGE "nasc")
+ set (RELEASE_NAME "nasc")

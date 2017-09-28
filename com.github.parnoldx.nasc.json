@@ -105,16 +105,17 @@
       "config-opts": [
         "-DCMAKE_VERBOSE_MAKEFILE=TRUE",
         "-DCMAKE_INSTALL_LIBDIR=/app/lib",
-        "-DCMAKE_INSTALL_PREFIX=/app"
+        "-DCMAKE_INSTALL_PREFIX=/app",
+        "-DSTYLEDIR=/app/share/qalculate/styles/"
       ],
       "build-options" : {
         "cflags": "-L/app/lib"
       },
       "sources": [
         {
-          "type": "archive",
-          "url": "https://github.com/parnold-x/nasc/archive/0.4.5.tar.gz",
-          "sha256": "4ef69f80a2d810b959f527c18f39e33bfa6e0c3944a740a30f06cef8034a1a54"
+          "type": "git",
+          "url": "https://github.com/parnold-x/nasc.git",
+          "branch": "nasc"
         },
         {
           "type": "patch",
@@ -122,15 +123,7 @@
         },
         {
           "type": "patch",
-          "path": "cmake-qalculate-lib-dir.patch"
-        },
-        {
-          "type": "patch",
-          "path": "fix-hardcoded-paths.patch"
-        },
-        {
-          "type": "patch",
-          "path": "create-exchange-rate-folder.patch"
+          "path": "override-styledir.patch"
         },
         {
           "type": "shell",
