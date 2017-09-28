@@ -107,7 +107,8 @@
         "-DCMAKE_VERBOSE_MAKEFILE=TRUE",
         "-DCMAKE_INSTALL_LIBDIR=/app/lib",
         "-DCMAKE_INSTALL_PREFIX=/app",
-        "-DSTYLEDIR=/app/share/qalculate/styles/"
+        "-DSTYLEDIR=/app/share/qalculate/styles/",
+        "-DDATADIR=/app/share/nasc"
       ],
       "build-options" : {
         "cflags": "-L/app/lib"
@@ -121,10 +122,6 @@
         {
           "type": "patch",
           "path": "fix-app-id.patch"
-        },
-        {
-          "type": "patch",
-          "path": "override-styledir.patch"
         },
         {
           "type": "shell",
