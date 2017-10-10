@@ -115,9 +115,9 @@
       },
       "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/parnold-x/nasc.git",
-          "branch": "nasc"
+          "type": "archive",
+          "url": "https://github.com/parnold-x/nasc/archive/0.4.6.tar.gz",
+          "sha256": "bbc7c5895d96061d97a15b467cdb70e9c0c8106293dcd0a924d6b843c6d17b90"
         },
         {
           "type": "patch",
